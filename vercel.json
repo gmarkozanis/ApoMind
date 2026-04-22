@@ -1,7 +1,0 @@
-{
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/server.mjs" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/public/index.html" }
-  ]
-}

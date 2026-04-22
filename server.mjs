@@ -19,7 +19,9 @@ const SYSTEM_PROMPT =
   "Αν το έγγραφο δεν περιέχει σαφή απάντηση, απαντάς ακριβώς: 'Δεν βρήκα σχετική πληροφορία στο έγγραφο γνώσης.' " +
   "Μην χρησιμοποιείς γενικές γνώσεις, μην κάνεις υποθέσεις, μην συμπληρώνεις κενά. " +
   "Να απαντάς στα ελληνικά, σύντομα, καθαρά και επαγγελματικά.";
-
+app.get("/", (_req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 if (!process.env.OPENAI_API_KEY) {
   console.warn("[WARN] Missing OPENAI_API_KEY in environment.");
 }
