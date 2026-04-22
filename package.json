@@ -1,0 +1,23 @@
+{
+  "name": "apomind-vercel",
+  "version": "1.1.0",
+  "description": "ApoMind knowledge-grounded chatbot using OpenAI Responses API and file search",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "keywords": [
+    "openai",
+    "chatbot",
+    "file-search",
+    "docx"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "openai": "^6.34.0"
+  }
+}
