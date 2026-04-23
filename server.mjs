@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = Number(process.env.PORT || 3000);
-const MODEL = process.env.MODEL || process.env.OPENAI_MODEL || "gpt-5.4-mini";
+const MODEL = process.env.MODEL || process.env.OPENAI_MODEL || "gpt-4o-mini";
 const VECTOR_STORE_NAME = process.env.VECTOR_STORE_NAME || "ApoMind Knowledge Base";
 const KNOWLEDGE_DOC_PATH = path.resolve(__dirname, process.env.KNOWLEDGE_FILE || "./knowledge.docx");
 const SYSTEM_PROMPT =
